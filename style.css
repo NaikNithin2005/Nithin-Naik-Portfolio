@@ -22,4 +22,34 @@ a{
     color:burlywood;
 }
 
+.main-logo{
+    width: 100px;
+    height: 100px;
+}
+
+.main{
+    font-size: 80px;
+    padding-left: 10px;
+}
+
+.main-img{
+    width: 250px;
+    height: auto;
+    padding-top: 50px;
+}
+
+.about-txt{
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    padding-left: 80px;
+}
+
+.about-img{
+    width: 300px;
+    height: auto;
+    padding-left: 100px;
+}
 
