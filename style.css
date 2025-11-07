@@ -1,5 +1,25 @@
-html{
+body{
     background:#181818;
+}
+
+#nav-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    display: block;
+}
+
+.side-name{
+    font-size: 1rem;
+    font-weight: bold;
+    display: ;
+    justify-content: space-between;
+    
 }
 
 h1{
