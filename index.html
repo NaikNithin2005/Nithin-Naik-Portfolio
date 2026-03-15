@@ -28,6 +28,11 @@
                 <img class="logo" src="./protfolio images/QKcStErJS-WA18MPj3ihfw.jpeg" alt="Nithin Naik Logo">
                 <span class="logo-text">Nithin.</span>
             </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Portfolio</a></li>
                 <li><a href="#about">About</a></li>
@@ -337,6 +342,25 @@
                 }
                 observer.observe(el);
             });
+
+            // Mobile Menu Toggle Logic
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = document.querySelector('.nav-links');
+
+            if (mobileMenu) {
+                mobileMenu.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('is-active');
+                    navLinks.classList.toggle('active');
+                });
+
+                const navItems = document.querySelectorAll('.nav-links a');
+                navItems.forEach(item => {
+                    item.addEventListener('click', () => {
+                        mobileMenu.classList.remove('is-active');
+                        navLinks.classList.remove('active');
+                    });
+                });
+            }
         });
     </script>
 </body>
